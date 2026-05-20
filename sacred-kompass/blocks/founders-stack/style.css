@@ -1,0 +1,24 @@
+@layer components {
+  .sk-founders-stack {
+    padding: var(--sk-section-y) var(--sk-section-x);
+    background: var(--sk-cream);
+    overflow: hidden;
+  }
+
+  .sk-founders-stack__header {
+    text-align: center;
+    margin-bottom: var(--sk-space-xl);
+  }
+
+  .sk-founders-stack__title {
+    font-family: var(--sk-font-display);
+    font-size: var(--fs-h2);
+    color: var(--sk-earth);
+  }
+
+  /* Lit component styles are scoped within the component */
+  sk-founders-stack {
+    display: block;
+    min-height: 60vh;
+  }
+}

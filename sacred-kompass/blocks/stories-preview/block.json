@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sk/stories-preview",
+  "title": "Stories Preview",
+  "category": "design",
+  "icon": "book-alt",
+  "description": "Asymmetric editorial grid for stories.",
+  "supports": {
+    "html": false,
+    "align": ["full"]
+  },
+  "textdomain": "sacred-kompass",
+  "render": "file:./render.php",
+  "style": "file:./style.css",
+  "viewScript": "file:./view.js"
+}

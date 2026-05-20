@@ -1,0 +1,54 @@
+@layer components {
+  .sk-values-pinned {
+    background: var(--sk-earth);
+    color: var(--sk-cream);
+    overflow: hidden; /* Prevent horizontal scrollbar on body */
+  }
+
+  .sk-values-pinned__header {
+    padding: var(--sk-space-xl) var(--sk-section-x) 0;
+  }
+
+  .sk-values-pinned__title {
+    font-family: var(--sk-font-display);
+    font-size: var(--fs-h2);
+    font-weight: 400;
+  }
+
+  .sk-values-pinned__scroll-container {
+    height: 100vh; /* Will be pinned by GSAP */
+    display: flex;
+    align-items: center;
+  }
+
+  .sk-values-pinned__track {
+    display: flex;
+    padding: 0 var(--sk-section-x);
+    gap: var(--sk-space-md);
+    /* Width managed by GSAP based on content */
+  }
+
+  .sk-values-pinned__card {
+    flex: 0 0 clamp(300px, 30vw, 400px);
+    background: var(--sk-cream-30);
+    padding: var(--sk-space-lg);
+    border-radius: 4px;
+    height: clamp(300px, 40vh, 500px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sk-values-pinned__card-title {
+    font-family: var(--sk-font-display);
+    font-size: var(--fs-h3);
+    margin-bottom: var(--sk-space-sm);
+    color: var(--sk-gold);
+  }
+
+  .sk-values-pinned__card-text {
+    font-family: var(--sk-font-body);
+    font-size: var(--fs-body);
+    color: var(--sk-cream);
+  }
+}

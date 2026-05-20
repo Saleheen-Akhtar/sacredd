@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sk/events-upcoming",
+  "title": "Upcoming Events",
+  "category": "design",
+  "icon": "calendar-alt",
+  "description": "Horizontal scroll cards for events.",
+  "supports": {
+    "html": false,
+    "align": ["full"]
+  },
+  "textdomain": "sacred-kompass",
+  "render": "file:./render.php",
+  "style": "file:./style.css",
+  "viewScript": "file:./view.js"
+}

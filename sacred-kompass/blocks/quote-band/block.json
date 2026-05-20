@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sk/quote-band",
+  "title": "Quote Band",
+  "category": "design",
+  "icon": "format-quote",
+  "description": "Parallax bg + char-reveal quote.",
+  "attributes": {
+    "quote": { "type": "string" },
+    "author": { "type": "string" },
+    "image_id": { "type": "number" }
+  },
+  "supports": {
+    "html": false,
+    "align": ["full"]
+  },
+  "textdomain": "sacred-kompass",
+  "render": "file:./render.php",
+  "style": "file:./style.css",
+  "viewScript": "file:./view.js"
+}

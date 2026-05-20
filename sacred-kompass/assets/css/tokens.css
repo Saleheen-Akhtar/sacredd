@@ -1,0 +1,56 @@
+:root {
+  /* Colors */
+  --sk-cream: #FAF6EE;
+  --sk-earth: #2B2017;
+  --sk-terra: #C56A3F;
+  --sk-gold: #D4A24C;
+  --sk-sage: #9DA888;
+  --sk-earth-60: rgba(43, 32, 23, 0.6);
+  --sk-earth-12: rgba(43, 32, 23, 0.12);
+  --sk-cream-30: rgba(250, 246, 238, 0.3);
+  --sk-gold-20: rgba(212, 162, 76, 0.2);
+  --sk-terra-50: rgba(197, 106, 63, 0.5);
+
+  /* Typography */
+  --sk-font-display: 'Cormorant Garamond', 'Cormorant', Georgia, serif;
+  --sk-font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --sk-font-eyebrow: 'Inter', sans-serif;
+
+  --fs-eyebrow: 12px;
+  --fs-body-sm: clamp(14px, min(0.81vw, 2.18vh), 16px);
+  --fs-body: clamp(16px, min(1.1vw, 2.9vh), 20px);
+  --fs-h3: clamp(2rem, 3.75vw, 3.4rem);
+  --fs-h2: clamp(2.5rem, min(5.5vw, 13vh), 5rem);
+  --fs-headline: min(6.5vw, 17.5vh);
+  --fs-display: min(11.8vw, 31.8vh);
+
+  /* Spacing */
+  --sk-space-3xs: 4px;
+  --sk-space-2xs: 8px;
+  --sk-space-xs: 12px;
+  --sk-space-sm: 16px;
+  --sk-space-md: 24px;
+  --sk-space-lg: 40px;
+  --sk-space-xl: 64px;
+  --sk-space-2xl: 96px;
+  --sk-section-y: clamp(80px, 12vh, 160px);
+  --sk-section-x: clamp(20px, 5vw, 80px);
+
+  /* Easing */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-hero: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.4s;
+  --dur-base: 0.8s;
+  --dur-slow: 1.2s;
+
+  /* Z-index */
+  --z-base: 1;
+  --z-content: 10;
+  --z-sticky: 100;
+  --z-nav: 1000;
+  --z-modal: 9000;
+  --z-overlay: 9500;
+  --z-announcement: 9800;
+  --z-preloader: 9900;
+  --z-curtain: 9999;
+}

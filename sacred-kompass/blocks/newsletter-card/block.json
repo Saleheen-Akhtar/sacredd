@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sk/newsletter-card",
+  "title": "Newsletter Card",
+  "category": "widgets",
+  "icon": "email",
+  "description": "Single source of truth for newsletter signup.",
+  "supports": {
+    "html": false,
+    "align": ["full"]
+  },
+  "textdomain": "sacred-kompass",
+  "render": "file:./render.php",
+  "style": "file:./style.css"
+}

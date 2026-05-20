@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sk/announcement-bar",
+  "title": "Announcement Bar",
+  "category": "widgets",
+  "icon": "megaphone",
+  "description": "Sticky top, dismissible, slide-down on load.",
+  "attributes": {
+    "text": { "type": "string" },
+    "link_url": { "type": "string" }
+  },
+  "supports": {
+    "html": false,
+    "align": ["full"]
+  },
+  "textdomain": "sacred-kompass",
+  "render": "file:./render.php",
+  "style": "file:./style.css",
+  "viewScript": "file:./view.js"
+}

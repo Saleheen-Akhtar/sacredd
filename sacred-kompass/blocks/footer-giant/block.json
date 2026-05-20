@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sk/footer-giant",
+  "title": "Footer Giant",
+  "category": "design",
+  "icon": "flag",
+  "description": "Oversize logo SVG mask + decorations.",
+  "supports": {
+    "html": false,
+    "align": ["full"]
+  },
+  "textdomain": "sacred-kompass",
+  "render": "file:./render.php",
+  "style": "file:./style.css",
+  "viewScript": "file:./view.js"
+}
