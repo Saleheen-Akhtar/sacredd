@@ -1,0 +1,93 @@
+@layer components {
+  .sk-events-upcoming {
+    padding: var(--sk-section-y) 0;
+    background: var(--sk-cream);
+    overflow: hidden;
+  }
+
+  .sk-events-upcoming__header {
+    padding: 0 var(--sk-section-x);
+    margin-bottom: var(--sk-space-lg);
+  }
+
+  .sk-events-upcoming__title {
+    font-family: var(--sk-font-display);
+    font-size: var(--fs-h2);
+    color: var(--sk-earth);
+  }
+
+  .sk-events-upcoming__scroll-area {
+    /* Simple horizontal scrolling container fallback */
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    padding-bottom: var(--sk-space-md);
+  }
+  .sk-events-upcoming__scroll-area::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  .sk-events-upcoming__track {
+    display: flex;
+    gap: var(--sk-space-md);
+    padding: 0 var(--sk-section-x);
+    width: max-content;
+  }
+
+  .sk-event-card {
+    flex: 0 0 clamp(300px, 40vw, 450px);
+  }
+
+  .sk-event-card__inner {
+    background: var(--sk-earth);
+    color: var(--sk-cream);
+    padding: var(--sk-space-lg);
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sk-event-card__meta {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--sk-font-eyebrow);
+    font-size: var(--fs-eyebrow);
+    color: var(--sk-gold);
+    text-transform: uppercase;
+    margin-bottom: var(--sk-space-sm);
+    border-bottom: 1px solid var(--sk-earth-60);
+    padding-bottom: var(--sk-space-2xs);
+  }
+
+  .sk-event-card__title {
+    font-family: var(--sk-font-display);
+    font-size: var(--fs-h3);
+    margin-bottom: var(--sk-space-sm);
+  }
+
+  .sk-event-card__excerpt {
+    font-family: var(--sk-font-body);
+    font-size: var(--fs-body);
+    color: var(--sk-cream-30);
+    margin-bottom: var(--sk-space-lg);
+    flex-grow: 1;
+  }
+
+  .sk-btn--outline {
+    display: inline-block;
+    padding: var(--sk-space-sm) var(--sk-space-md);
+    border: 1px solid var(--sk-gold);
+    color: var(--sk-gold);
+    text-decoration: none;
+    font-family: var(--sk-font-eyebrow);
+    font-size: var(--fs-eyebrow);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    transition: all var(--dur-fast) var(--ease-out);
+  }
+  .sk-btn--outline:hover {
+    background: var(--sk-gold);
+    color: var(--sk-earth);
+  }
+}

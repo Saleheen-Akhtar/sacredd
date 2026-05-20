@@ -1,0 +1,112 @@
+@layer components {
+  .sk-journal-grid {
+    padding: var(--sk-section-y) var(--sk-section-x);
+    background: var(--sk-earth);
+    color: var(--sk-cream);
+  }
+
+  .sk-journal-grid__header {
+    text-align: center;
+    margin-bottom: var(--sk-space-xl);
+  }
+
+  .sk-journal-grid__title {
+    font-family: var(--sk-font-display);
+    font-size: var(--fs-h2);
+    color: var(--sk-gold);
+  }
+
+  .sk-journal-grid__masonry {
+    columns: 1;
+    column-gap: var(--sk-space-lg);
+  }
+
+  @media (min-width: 768px) {
+    .sk-journal-grid__masonry {
+      columns: 2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .sk-journal-grid__masonry {
+      columns: 3;
+    }
+  }
+
+  .sk-journal-card {
+    break-inside: avoid;
+    margin-bottom: var(--sk-space-lg);
+    background: var(--sk-cream-30);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .sk-journal-card__link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .sk-journal-card__image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sk-journal-card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--dur-slow) var(--ease-out);
+  }
+
+  .sk-journal-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: var(--sk-earth-60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--dur-fast) var(--ease-out);
+  }
+
+  .sk-journal-card__read {
+    font-family: var(--sk-font-eyebrow);
+    font-size: var(--fs-eyebrow);
+    color: var(--sk-cream);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: translateY(20px);
+    transition: transform var(--dur-fast) var(--ease-out);
+  }
+
+  .sk-journal-card__link:hover .sk-journal-card__image {
+    transform: scale(1.05);
+  }
+
+  .sk-journal-card__link:hover .sk-journal-card__overlay {
+    opacity: 1;
+  }
+
+  .sk-journal-card__link:hover .sk-journal-card__read {
+    transform: translateY(0);
+  }
+
+  .sk-journal-card__content {
+    padding: var(--sk-space-md);
+  }
+
+  .sk-journal-card__date {
+    font-family: var(--sk-font-eyebrow);
+    font-size: var(--fs-eyebrow);
+    color: var(--sk-gold);
+    display: block;
+    margin-bottom: var(--sk-space-2xs);
+  }
+
+  .sk-journal-card__title {
+    font-family: var(--sk-font-display);
+    font-size: var(--fs-h3);
+    margin: 0;
+  }
+}

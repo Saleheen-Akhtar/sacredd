@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        { "slug": "sk-cream", "color": "#FAF6EE", "name": "Cream" },
+        { "slug": "sk-earth", "color": "#2B2017", "name": "Earth" },
+        { "slug": "sk-terra", "color": "#C56A3F", "name": "Terra" },
+        { "slug": "sk-gold",  "color": "#D4A24C", "name": "Gold" },
+        { "slug": "sk-sage",  "color": "#9DA888", "name": "Sage" }
+      ],
+      "custom": true,
+      "link": true
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Cormorant Garamond', 'Cormorant', Georgia, serif",
+          "slug": "display",
+          "name": "Display"
+        },
+        {
+          "fontFamily": "'Inter', system-ui, -apple-system, sans-serif",
+          "slug": "body",
+          "name": "Body"
+        },
+        {
+          "fontFamily": "'Inter', sans-serif",
+          "slug": "eyebrow",
+          "name": "Eyebrow"
+        }
+      ]
+    },
+    "spacing": {
+      "spacingScale": {
+        "steps": 0
+      },
+      "spacingSizes": [
+        { "size": "4px", "slug": "3xs", "name": "3XS" },
+        { "size": "8px", "slug": "2xs", "name": "2XS" },
+        { "size": "12px", "slug": "xs", "name": "XS" },
+        { "size": "16px", "slug": "sm", "name": "SM" },
+        { "size": "24px", "slug": "md", "name": "MD" },
+        { "size": "40px", "slug": "lg", "name": "LG" },
+        { "size": "64px", "slug": "xl", "name": "XL" },
+        { "size": "96px", "slug": "2xl", "name": "2XL" }
+      ]
+    }
+  }
+}

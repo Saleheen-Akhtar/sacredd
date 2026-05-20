@@ -1,0 +1,68 @@
+@layer components {
+  .sk-quote-band {
+    position: relative;
+    padding: var(--sk-section-y) var(--sk-section-x);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--sk-cream);
+  }
+
+  .sk-quote-band__bg-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .sk-quote-band__bg {
+    position: absolute;
+    /* Oversize for parallax */
+    inset: -20% 0;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+  }
+
+  .sk-quote-band__overlay {
+    position: absolute;
+    inset: 0;
+    background: var(--sk-earth);
+    opacity: 0.7; /* Darken bg for text readability */
+  }
+
+  .sk-quote-band__content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .sk-quote-band__text {
+    font-family: var(--sk-font-display);
+    font-size: var(--fs-h2);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: var(--sk-space-md);
+  }
+
+  .sk-quote-word {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .sk-quote-char {
+    display: inline-block;
+    opacity: 0.2; /* Initial state for reveal */
+  }
+
+  .sk-quote-band__author {
+    font-family: var(--sk-font-eyebrow);
+    font-size: var(--fs-eyebrow);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sk-gold);
+  }
+}

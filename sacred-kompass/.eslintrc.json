@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.object.name='dom'][callee.property.name='onReady'] > ArrowFunctionExpression",
+        "message": "Anonymous dom.onReady() calls are forbidden. Every JS module must be named."
+      },
+      {
+        "selector": "CallExpression[callee.object.name='dom'][callee.property.name='onReady'] > FunctionExpression[id=null]",
+        "message": "Anonymous dom.onReady() calls are forbidden. Every JS module must be named."
+      }
+    ]
+  }
+}
