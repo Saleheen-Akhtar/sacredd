@@ -1,0 +1,30 @@
+@layer components {
+  .sk-character-reveal {
+    padding: var(--sk-section-y) var(--sk-section-x);
+    background: var(--sk-cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+
+  .sk-character-reveal__text {
+    font-family: var(--sk-font-display);
+    font-size: var(--fs-h2);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--sk-sage); /* Ghost text layer */
+    max-width: 24ch;
+    text-align: center;
+  }
+
+  .sk-character-reveal__word {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .sk-character-reveal__char {
+    display: inline-block;
+    /* Will be animated to var(--sk-earth) via JS */
+  }
+}

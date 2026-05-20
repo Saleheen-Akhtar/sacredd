@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sk/cta-band",
+  "title": "CTA Band",
+  "category": "design",
+  "icon": "button",
+  "description": "Gold/terra full-bleed band.",
+  "attributes": {
+    "text": { "type": "string" },
+    "button_label": { "type": "string" },
+    "button_url": { "type": "string" }
+  },
+  "supports": {
+    "html": false,
+    "align": ["full"]
+  },
+  "textdomain": "sacred-kompass",
+  "render": "file:./render.php",
+  "style": "file:./style.css"
+}

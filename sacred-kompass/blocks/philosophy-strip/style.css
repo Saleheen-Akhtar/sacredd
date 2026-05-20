@@ -1,0 +1,25 @@
+@layer components {
+  .sk-philosophy-strip {
+    background: var(--sk-gold);
+    color: var(--sk-earth);
+    overflow: hidden;
+    height: 100vh; /* Pinned area */
+    display: flex;
+    align-items: center;
+  }
+
+  .sk-philosophy-strip__inner {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100vw; /* Start off-screen */
+  }
+
+  .sk-philosophy-strip__text {
+    font-family: var(--sk-font-display);
+    font-size: clamp(4rem, 10vw, 12rem);
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+    display: inline-block;
+  }
+}

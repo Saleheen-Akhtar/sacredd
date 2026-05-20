@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "color-no-hex": true,
+    "declaration-property-value-disallowed-list": {
+      "transition": ["/([0-9]+(s|ms))/"]
+    },
+    "selector-max-id": 0,
+    "selector-max-specificity": "0,4,0",
+    "function-disallowed-list": ["cubic-bezier"]
+  }
+}

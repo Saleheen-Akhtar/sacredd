@@ -1,0 +1,28 @@
+{
+  "name": "sacred-kompass",
+  "version": "10.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && wp-scripts build",
+    "lint": "stylelint 'assets/css/**/*.css' 'blocks/**/*.css' && eslint 'src/**/*.{js,ts}' 'blocks/**/*.ts'",
+    "build-guard": "grep -rnE '>([^<]{21,})<' --include='*.php' blocks/ inc/ || echo 'Build guard check passed'"
+  },
+  "devDependencies": {
+    "@wordpress/block-editor": "^14.0.0",
+    "@wordpress/blocks": "^13.0.0",
+    "@wordpress/components": "^28.0.0",
+    "@wordpress/i18n": "^5.0.0",
+    "@wordpress/scripts": "^27.9.0",
+    "eslint": "^9.0.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.13",
+    "lit": "^3.1.0"
+  }
+}
